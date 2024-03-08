@@ -1,4 +1,6 @@
-vim.keymap.set("n", "asdf", ":echo 'Hello World'<CR>")
+print("Hello World")
+
+vim.keymap.set("n", "asdf", ":echo 'Hello World'")
 -- local M = {}
 --
 -- function M.setup()
