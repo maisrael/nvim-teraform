@@ -1,9 +1,7 @@
-local M = {}
-
-function M.setup()
-	vim.api.nvim_create_user_command("SayHello", function()
+vim.api.nvim_create_user_command(
+	"SayHello", -- Command name
+	function()
 		print("Hello World")
-	end, { nargs = 0 })
-end
-
-return M
+	end, -- Command action
+	{ nargs = 0 } -- Command options
+)
